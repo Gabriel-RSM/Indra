@@ -1,0 +1,124 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: gloureirog@indracompany.com"
+      },
+      {
+        "line": 2,
+        "value": "# encoding: iso-8859-1"
+      }
+    ],
+    "line": 6,
+    "elements": [
+      {
+        "line": 24,
+        "name": "Registro de tarjeta",
+        "description": "",
+        "id": "registro-de-tarjeta---website-banco-ripley;registro-de-tarjeta;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 463736536,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseTest.finaliza()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9672306345,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "CT01 - Acceder la Página principal",
+            "match": {
+              "location": "CadastroCartaoTest.acessarPaginaCadastro()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4426129827,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "CT01 - Acceda la página de tarjetas",
+            "match": {
+              "location": "CadastroCartaoTest.clicarTarjeta()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "CT01 - Añadir DNI \"123456\" válido",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "CT01 - Añadir Correo \"indra@teste.com\" válido",
+            "match": {
+              "arguments": [
+                {
+                  "val": "indra@teste.com",
+                  "offset": 22
+                }
+              ],
+              "location": "CadastroCartaoTest.inserirCorreo(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "CT01 - Clic en enviar",
+            "match": {},
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@ProjetoBancoRipley"
+          },
+          {
+            "line": 12,
+            "name": "@CT001"
+          }
+        ]
+      }
+    ],
+    "name": "Registro de Tarjeta - Website Banco Ripley",
+    "description": "\nYo como Analista de pruebas\nQuiero registrar una tarjeta",
+    "id": "registro-de-tarjeta---website-banco-ripley",
+    "keyword": "Feature",
+    "uri": "CadastroCartao.feature",
+    "tags": [
+      {
+        "line": 4,
+        "name": "@ProjetoBancoRipley"
+      }
+    ]
+  }
+]
